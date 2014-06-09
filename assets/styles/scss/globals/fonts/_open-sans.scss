@@ -1,0 +1,51 @@
+// Open Sans Regular
+@include font-face(
+    'Open Sans', 
+    font-files(
+        'OpenSans/opensans-regular.woff', 
+        'OpenSans/opensans-regular.ttf',
+        'OpenSans/opensans-regular.svg#open_sansregular'
+    ),
+    'OpenSans/opensans-regular.eot',
+    normal,
+    normal
+);
+
+// Open Sans Italic
+@include font-face(
+    'Open Sans', 
+    font-files(
+        'OpenSans/opensans-italic.woff', 
+        'OpenSans/opensans-italic.ttf',
+        'OpenSans/opensans-italic.svg#open_sansitalic'
+    ),
+    'OpenSans/opensans-italic.eot',
+    normal,
+    italic
+);
+
+// Open Sans Bold
+@include font-face(
+    'Open Sans', 
+    font-files(
+        'OpenSans/opensans-bold.woff', 
+        'OpenSans/opensans-bold.ttf',
+        'OpenSans/opensans-bold.svg#open_sansbold'
+    ),
+    'OpenSans/opensans-bold.eot',
+    bold,
+    normal
+);
+
+// Open Sans Bold Italic
+@include font-face(
+    'Open Sans', 
+    font-files(
+        'OpenSans/opensans-bolditalic.woff', 
+        'OpenSans/opensans-bolditalic.ttf',
+        'OpenSans/opensans-bolditalic.svg#open_sansbold_italic'
+    ),
+    'OpenSans/opensans-bolditalic.eot',
+    bold,
+    italic
+);

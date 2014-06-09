@@ -1,0 +1,78 @@
+* {
+    @include box-sizing( border-box );
+
+    &:before,
+    &:after {
+        @include box-sizing( border-box );
+    }
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: {
+		family: 'Open Sans', Helvetica, sans-serif;
+		size: 100%;
+		weight: normal;
+	};
+}
+
+h1 {
+	font: {
+		size: $font-size-header;
+		weight: normal;
+	};
+	line-height: 150%;
+	margin-bottom: $font-size-header / 4;
+
+	&:last-child,
+	&:only-child {
+		margin-bottom: 0;
+	}
+}
+
+h2 {
+	font: {
+		size: $font-size-header-sub;
+		style: italic;
+		weight: normal;
+	};
+	line-height: 150%;
+}
+
+p {
+	font-size: $font-size-body;
+	line-height: 150%;
+	margin-bottom: $font-size-body;
+
+	&:last-child,
+	&:only-child {
+		margin-bottom: 0;
+	}
+}
+
+.text-align-left {
+	text-align: left;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.text-align-right {
+	text-align: right;
+}
+
+.fa-sandbox-app {
+	height: 100%;
+	overflow: hidden;
+}
+
+.fa-sandbox-view {
+	padding: 30px;
+}

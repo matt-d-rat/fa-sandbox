@@ -1,0 +1,42 @@
+<!doctype html>
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Famous-Angular Sandbox</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="icon" type="image/png" href="favicon.ico" />
+        <link rel="stylesheet" href="bower_components/famous-angular/dist/famous-angular.css" />
+        <link rel="stylesheet" href="assets/styles/css/main.css" />
+        <script src="bower_components/angular/angular.js"></script>
+    </head>
+    <body>
+        <fa-app class="fa-sandbox-app" ng-controller="mainCtrl">
+            <fa-header-footer-layout>
+                <!-- Header -->
+                <fa-surface fa-size="[undefined, 100]" class="fa-sandbox-header">
+                    <fa-modifier fa-translate="[20,20,0]">
+                        <fa-surface fa-size="[140, 60]" class="fa-sandbox-header-logo">Famous-Angular</fa-surface>
+                    </fa-modifier>
+                </fa-surface>
+                <!-- End Header -->
+
+                <!-- Page -->
+                <fa-scroll-view fa-pipe-from="eventHandler">
+                    <fa-view>
+                        <fa-surface fa-pipe-to="eventHandler" fa-size="[undefined, undefined]">
+                            <div class="fa-sandbox-view" ng-view></div>
+                        </fa-surface>
+                    </fa-view>
+                </fa-scroll-view>
+                <!-- End Page -->
+            </fa-header-footer-layout>
+        </fa-app>
+
+        <script src="bower_components/requirejs/require.js" data-main="config/require.config.js"></script>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+.fa-sandbox-header {
+	background-color: $color-primary-red;
+}
+
+.fa-sandbox-header-logo {
+	@include background-image-retina('famous-angular-white-logo.png');
+	background-repeat: no-repeat;
+	@include hide-text;
+}
